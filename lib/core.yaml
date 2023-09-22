@@ -1,1 +1,22 @@
+# sources:
+# 1. https://dart.dev/tools/analysis
+# 2. https://dart.dev/tools/linter-rules
+
+# https://github.com/flutter/packages/tree/main/packages/flutter_lints
 include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "build/**"
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  language:
+    # never implicitly casts from dynamic to a more specific type
+    strict-casts: true
+    # never chooses the dynamic type when it can’t determine a static type
+    strict-raw-types: true
+    # chooses the dynamic type when it can’t determine a static type due to
+    # omitted type arguments
+    strict-inference: true
+linter:
+  rules:
