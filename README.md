@@ -1,16 +1,12 @@
-# flutter_linting_rules
+This package is built on top of the flutter_lints package and contains rules that are more strict.
+Lints are surfaced by the dart analyzer, which statically checks dart code. Dart-enabled IDEs typically present the issues identified by the analyzer in their UI. Alternatively, the analyzer can be invoked manually by running flutter analyze.
 
-A new Flutter project.
+# Usage
 
-## Getting Started
+To use these rules, you need to add the following to **dev_dependencies**:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```yaml
+flutter_linting_rules:
+git:
+  url: https://github.com/el-leonya/flutter_linting_rules.git
+```
