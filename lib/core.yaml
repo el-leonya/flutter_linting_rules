@@ -83,3 +83,7 @@ linter:
     - deprecated_consistency
     - directives_ordering # Effective Dart
     - do_not_use_environment
+
+    # Pub rules.
+    - secure_pubspec_urls
+    - sort_pub_dependencies
