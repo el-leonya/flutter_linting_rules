@@ -84,6 +84,6 @@ linter:
     - directives_ordering # Effective Dart
     - do_not_use_environment
 
-    # Pub rules.
+    # Pub
     - secure_pubspec_urls
     - sort_pub_dependencies
