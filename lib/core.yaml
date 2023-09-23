@@ -42,3 +42,44 @@ linter:
     - throw_in_finally
     - unnecessary_statements
     - unsafe_html
+
+    # Style
+    - always_declare_return_types
+    - always_put_control_body_on_new_line # style guide for the flutter repo
+    - always_put_required_named_parameters_first
+    # clarification: it is reasonable to define a type only where it is not obvious
+    # (declaring a variable with assigning the return value from a function).
+    # - always_specify_types # style guide for the flutter repo
+    - annotate_redeclares
+    # - avoid_annotating_with_dynamic
+    - avoid_bool_literals_in_conditional_expressions
+    - avoid_catches_without_on_clauses
+    - avoid_catching_errors
+    - avoid_classes_with_only_static_members # Effective Dart
+    # docs: When compiled to JS, integer values are represented as floats.
+    # That can lead to some unexpected behavior when using either is or is!
+    # where the type is either int or double.
+    - avoid_double_and_int_checks # ? - it's worth considering if it's necessary
+    - avoid_equals_and_hash_code_on_mutable_classes # Effective Dart
+    - avoid_escaping_inner_quotes
+    - avoid_field_initializers_in_const_classes
+    - avoid_final_parameters # vs prefer_final_parameters
+    - avoid_implementing_value_types
+    - avoid_js_rounded_ints
+    - avoid_multiple_declarations_per_line
+    - avoid_positional_boolean_parameters
+    # - avoid_private_typedef_functions # ?
+    - avoid_redundant_argument_values
+    - avoid_returning_this # ?
+    - avoid_setters_without_getters
+    - avoid_types_on_closure_parameters # vs always_specify_types
+    - avoid_unused_constructor_parameters
+    - avoid_void_async
+    - cascade_invocations
+    - cast_nullable_to_non_nullable
+    - combinators_ordering
+    - conditional_uri_does_not_exist
+    - dangling_library_doc_comments
+    - deprecated_consistency
+    - directives_ordering # Effective Dart
+    - do_not_use_environment
