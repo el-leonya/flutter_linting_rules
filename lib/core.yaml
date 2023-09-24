@@ -49,7 +49,7 @@ linter:
     - always_put_required_named_parameters_first
     # clarification: it is reasonable to define a type only where it is not obvious
     # (declaring a variable with assigning the return value from a function).
-    # - always_specify_types # style guide for the flutter repo
+    # - always_specify_types # style guide for the flutter repo (vs omit_local_variable_types)
     - annotate_redeclares
     # - avoid_annotating_with_dynamic
     - avoid_bool_literals_in_conditional_expressions
@@ -67,7 +67,9 @@ linter:
     - avoid_implementing_value_types
     - avoid_js_rounded_ints
     - avoid_multiple_declarations_per_line
-    - avoid_positional_boolean_parameters
+    # If a function has only one boolean parameter,
+    # it makes no sense to make the parameter named
+    # - avoid_positional_boolean_parameters
     # - avoid_private_typedef_functions # ?
     - avoid_redundant_argument_values
     - avoid_returning_this # ?
@@ -83,7 +85,74 @@ linter:
     - deprecated_consistency
     - directives_ordering # Effective Dart
     - do_not_use_environment
+    - eol_at_end_of_file # ?
+    - flutter_style_todos # Flutter Style
+    - join_return_with_assignment
+    - leading_newlines_in_multiline_strings
+    - library_annotations
+    - lines_longer_than_80_chars
+    - matching_super_parameters
+    - missing_whitespace_between_adjacent_strings
+    - no_default_cases
+    - no_literal_bool_comparisons
+    - no_runtimeType_toString
+    - noop_primitive_operations
+    # clarification: it is reasonable to define a type only where it is not obvious
+    # (declaring a variable with assigning the return value from a function).
+    # - omit_local_variable_types # vs always_specify_types
+    - one_member_abstracts
+    - only_throw_errors
+    # - package_api_docs # ?
+    - parameter_assignments
+    - prefer_asserts_in_initializer_lists
+    - prefer_asserts_with_message
+    - prefer_constructors_over_static_methods
+    # - prefer_double_quotes # vs prefer_single_quotes
+    # often annoying
+    # - prefer_expression_function_bodies
+    - prefer_final_in_for_each
+    - prefer_final_locals
+    # - prefer_final_parameters # vs avoid_final_parameters
+    - prefer_foreach
+    - prefer_if_elements_to_conditional_expressions
+    # - prefer_int_literals
+    - prefer_mixin
+    - prefer_null_aware_method_calls
+    - prefer_single_quotes # vs prefer_double_quotes
+    # - public_member_api_docs # ?
+    - require_trailing_commas
+    - sized_box_shrink_expand
+    - sort_constructors_first
+    - sort_unnamed_constructors_first
+    - tighten_type_of_initializing_formals
+    - type_annotate_public_apis
+    - type_literal_in_constant_pattern # ?
+    - unawaited_futures
+    - unnecessary_await_in_return
+    - unnecessary_breaks
+    # - unnecessary_final vs prefer_final_locals, prefer_final_parameters
+    - unnecessary_lambdas
+    - unnecessary_library_directive
+    - unnecessary_null_aware_operator_on_extension_on_nullable
+    - unnecessary_null_checks
+    - unnecessary_parenthesis
+    - unnecessary_raw_strings
+    - unnecessary_to_list_in_spreads
+    - unreachable_from_main
+    # - use_colored_box # TODO: add comment
+    - use_decorated_box
+    - use_enums
+    - use_if_null_to_convert_nulls_to_bools # Effective Dart
+    - use_is_even_rather_than_modulo
+    - use_late_for_private_fields_and_variables
+    - use_named_constants
+    - use_raw_strings
+    - use_setters_to_change_properties
+    - use_string_buffers
+    - use_super_parameters
+    - use_test_throws_matchers
+    - use_to_and_as_if_applicable # Effective Dart
 
-    # Pub rules.
+    # Pub
     - secure_pubspec_urls
     - sort_pub_dependencies
