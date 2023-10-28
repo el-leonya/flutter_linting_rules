@@ -75,13 +75,12 @@ linter:
     - avoid_returning_this # ?
     - avoid_setters_without_getters
     - avoid_types_on_closure_parameters # vs always_specify_types
-    - avoid_unused_constructor_parameters
+    - no_wildcard_variable_uses
     - avoid_void_async
     - cascade_invocations
     - cast_nullable_to_non_nullable
     - combinators_ordering
     - conditional_uri_does_not_exist
-    - dangling_library_doc_comments
     - deprecated_consistency
     - directives_ordering # Effective Dart
     - do_not_use_environment
@@ -126,7 +125,7 @@ linter:
     - sort_unnamed_constructors_first
     - tighten_type_of_initializing_formals
     - type_annotate_public_apis
-    - type_literal_in_constant_pattern # ?
+    # - type_literal_in_constant_pattern # has in flutter_lints 3 # explore
     - unawaited_futures
     - unnecessary_await_in_return
     - unnecessary_breaks
@@ -137,7 +136,6 @@ linter:
     - unnecessary_null_checks
     - unnecessary_parenthesis
     - unnecessary_raw_strings
-    - unnecessary_to_list_in_spreads
     - unreachable_from_main
     # - use_colored_box # TODO: add comment
     - use_decorated_box
@@ -149,10 +147,8 @@ linter:
     - use_raw_strings
     - use_setters_to_change_properties
     - use_string_buffers
-    - use_super_parameters
     - use_test_throws_matchers
     - use_to_and_as_if_applicable # Effective Dart
 
     # Pub
-    - secure_pubspec_urls
     - sort_pub_dependencies
